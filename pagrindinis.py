@@ -1,0 +1,1 @@
+uzduotys = {'uzduotis1': 'nepadaryta', 'uzduotis2': 'nepadaryta', 'uzduotis3': 'nepadaryta'}
