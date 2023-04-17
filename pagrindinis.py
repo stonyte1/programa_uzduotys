@@ -40,6 +40,7 @@ while True:
         pramogos = int(input('Įveskite pramogų išlaidas: '))
         print('--------------------------------------------')
         zurnalas.append(-pramogos)
+
     elif pasirinkimas == 6:
         bendras = 0
         for irasas in zurnalas:
@@ -47,6 +48,7 @@ while True:
             bendras += irasas
         print(f'balansas: {bendras}')
         print('--------------------------------------------')
+
     elif pasirinkimas == 9:
         print('-------Geros dienos--------')
         break
