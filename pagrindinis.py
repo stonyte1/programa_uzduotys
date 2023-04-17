@@ -12,7 +12,7 @@ zurnalas.append(balansas)
 
 while True:
 
-    print('Porgramų pasirinkimas: Kuras(1), Blanasas(2), Buto nuoma(3), Dienos išlaidos(4), Pramogos(5), Zurnalas(6), Iseiti(9)')
+    print('Programų pasirinkimas: Kuras(1), Buto nuoma(2), Dienos išlaidos(3), Pramogos(4), Balansas(5), Išeiti(9)')
     pasirinkimas = int(input("Įveskite pageidautina programą: "))
     print('-----------------------------------------------')
 
@@ -23,30 +23,26 @@ while True:
         print('--------------------------------------------')
 
     elif pasirinkimas == 2:
-        print(f'Jūsu dabartinis balansas: {balansas} Eurų.')
-        print('--------------------------------------------')
-
-    elif pasirinkimas == 3:
         butas = int(input('Įveskite buto nuomos išlaidas: '))
         print('--------------------------------------------')
         zurnalas.append(-butas)
 
-    elif pasirinkimas == 4:
+    elif pasirinkimas == 3:
         dienos_islaidos = int(input('Įveskite dienos išlaidas: '))
         print('--------------------------------------------')
         zurnalas.append(-dienos_islaidos)
 
-    elif pasirinkimas == 5:
+    elif pasirinkimas == 4:
         pramogos = int(input('Įveskite pramogų išlaidas: '))
         print('--------------------------------------------')
         zurnalas.append(-pramogos)
 
-    elif pasirinkimas == 6:
+    elif pasirinkimas == 5:
         bendras = 0
         for irasas in zurnalas:
             print(irasas)
             bendras += irasas
-        print(f'balansas: {bendras}')
+        print(f'Balansas: {bendras}')
         print('--------------------------------------------')
 
     elif pasirinkimas == 9:
